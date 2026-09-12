@@ -182,6 +182,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Display
+# The selected sm8250 HAL declares allocator 4.0 alongside mapper 4.0.
+# SDM845 is excluded from the platform Gralloc4 defaults.
+$(call soong_config_set,qtidisplay,gralloc4,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
