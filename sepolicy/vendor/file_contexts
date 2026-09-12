@@ -47,3 +47,6 @@
 
 # Sys files
 /sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
+
+# Qualcomm Codec2 service
+/vendor/bin/hw/vendor\.qti\.media\.c2@1\.0-service    u:object_r:mediacodec_exec:s0
