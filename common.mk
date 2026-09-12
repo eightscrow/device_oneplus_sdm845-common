@@ -178,6 +178,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# ConfigStore
+# SurfaceFlinger uses sysprops; the legacy service is not in the device manifest.
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
