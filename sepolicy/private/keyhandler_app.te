@@ -1,4 +1,4 @@
-type keyhandler_app, domain;
+type keyhandler_app, domain, mlstrustedsubject;
 
 app_domain(keyhandler_app)
 
