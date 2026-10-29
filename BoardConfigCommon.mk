@@ -97,6 +97,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB := true
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 TARGET_CAMERA_PACKAGE_NAME := com.oneplus.camera
+$(call soong_config_set_bool,camera,needs_client_info_lib,true)
 
 # Display
 # OxygenOS camera blobs use the standard RAW10/RAW12 buffer layout.
