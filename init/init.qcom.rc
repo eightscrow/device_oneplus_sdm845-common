@@ -249,6 +249,7 @@ on post-fs-data
 
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
+    mkdir /data/vendor/camera/ashdr 0770 camera camera
 
 
     #Create directory for tftp
