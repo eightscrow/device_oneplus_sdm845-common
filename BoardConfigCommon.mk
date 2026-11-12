@@ -103,6 +103,8 @@ $(call soong_config_set_bool,camera,needs_client_info_lib,true)
 # OxygenOS camera blobs use the standard RAW10/RAW12 buffer layout.
 TARGET_NO_RAW10_CUSTOM_FORMAT := true
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
+# The legacy vidc driver uses msm_media_info.h.
+override SOONG_CONFIG_qtidisplay_target_uses_legacy_buffer_alignment := false
 TARGET_SCREEN_DENSITY := 450
 TARGET_USES_FOD_ZPOS := true
 
